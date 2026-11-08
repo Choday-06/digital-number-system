@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="An interactive learning website for binary, decimal, octal and hexadecimal number systems.">
+  <title>Digital Number System | Learn • Explore • Create</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Digital Number System home">
+      <img src="assets/logo.jpg" alt="Digital Number System Bhutanese-inspired logo">
+      <span>Digital Number System</span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+    <nav id="mainNav" aria-label="Main navigation">
+      <a href="#home" data-nav>Home</a>
+      <a href="#videos" data-nav>Videos</a>
+      <a href="#learning-materials" data-nav>Learning Materials</a>
+      <a href="#quizzes" data-nav>Quizzes</a>
+      <a href="#history" data-nav>History</a>
+      <a href="#about" data-nav>About Us</a>
+    </nav>
+  </header>
+
+  <main id="app" tabindex="-1">
+    <!-- JavaScript renders the pages here. -->
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-mark">✦</div>
+    <p><strong>Digital Number System</strong></p>
+    <p>Learn • Explore • Create</p>
+    <small>Designed with inspiration from Bhutanese art and culture.</small>
+  </footer>
+
+
+  <!-- Bhutanese-inspired AI Study Assistant -->
+  <button id="aiChatToggle" class="ai-chat-toggle" type="button" aria-label="Open AI Study Assistant" aria-expanded="false">
+    <span class="ai-toggle-pattern" aria-hidden="true">✦</span><span class="ai-toggle-label">Ask AI</span>
+  </button>
+  <section id="aiChatPanel" class="ai-chat-panel" aria-label="AI Study Assistant" aria-hidden="true">
+    <header class="ai-chat-header">
+      <div class="ai-chat-emblem" aria-hidden="true">༄</div>
+      <div class="ai-chat-heading"><span class="ai-chat-kicker">DIGITAL NUMBER SYSTEM</span><h2>AI Study Assistant</h2><p><span class="ai-status-dot"></span> Ready to help you learn</p></div>
+      <button id="aiChatClose" class="ai-chat-close" type="button" aria-label="Close chat">×</button>
+    </header>
+    <div class="ai-chat-welcome"><span class="ai-welcome-ornament">✧ ༄ ✧</span><strong>Kuzuzangpo la!</strong><p>Welcome, learner. Ask me anything about Binary, Decimal, Octal or Hexadecimal. I can explain concepts and conversions step by step.</p></div>
+    <div class="ai-suggestions" aria-label="Suggested questions">
+      <button type="button" data-ai-prompt="Explain the binary number system in simple words.">Explain Binary</button>
+      <button type="button" data-ai-prompt="Show me step by step how to convert 1011 from binary to decimal.">Convert 1011₂</button>
+      <button type="button" data-ai-prompt="What is the difference between octal and hexadecimal?">Octal vs Hex</button>
+    </div>
+    <div id="aiChatMessages" class="ai-chat-messages" role="log" aria-live="polite" aria-relevant="additions">
+      <div class="ai-message ai-message-bot"><span class="ai-message-avatar">༄</span><div class="ai-message-bubble">I’m here to help! Tell me what you are finding difficult. 😊</div></div>
+    </div>
+    <form id="aiChatForm" class="ai-chat-form">
+      <label class="sr-only" for="aiChatInput">Type your question</label>
+      <textarea id="aiChatInput" rows="1" maxlength="2000" placeholder="Type your question here..." required></textarea>
+      <button id="aiChatSend" type="submit" aria-label="Send question"><span>➤</span></button>
+    </form>
+    <div class="ai-chat-footnote">AI-generated answers may occasionally be incorrect. Check your learning notes too.</div>
+    <div class="ai-chat-bottom-pattern" aria-hidden="true">✦ ❖ ✦ ❖ ✦ ❖ ✦</div>
+  </section>
+
+  <button id="backToTop" class="back-to-top" aria-label="Back to top">↑</button>
+  <script src="app.js?v=history-dashboard-20261109"></script>
+  <script src="chatbot.js?v=bhutan-ai-20261109"></script>
+</body>
+</html>
